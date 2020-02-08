@@ -1,0 +1,74 @@
+#box {
+  position: absolute;
+  top:50px;
+  left: 25%;
+  height: 80%;
+  width: 50%;
+  background-color: transparent;
+  border: 5px solid black;
+}
+.circle {
+  position: absolute;
+  top: 20px;
+  left: 9%;
+  height: 90%;
+  width: 80%;
+  background-color: transparent;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+.key {
+    height: 65px;
+    width: 65px;
+    border: 2px solid black;
+    position: absolute;
+    margin: 125px;
+    font-size: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: black;
+}
+
+.up {
+    left: 115px;
+    top: 23.5%;
+}
+
+.down {
+    left: 115px;
+    top: 40%;
+}
+
+.left {
+    left: 40px;
+    top: 40%;
+}
+
+.right {
+    left: 190px;
+    top: 40%;
+}
+
+.up:before {
+    content: '\002191';
+}
+
+.up~div {
+    background-color: blue;
+    }
+
+.up+div {
+    color: red;
+    }
+
+.left:before {
+    content: '\002190';
+}
+
+.down:before {
+    content: '\002193';
+}
+
+.right:before {
+    content: '\002192';
+}
